@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)http://127.0.0.1:8080/#!/ -->
+<html lang="en" ng-app="helsingborgApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Helsingborg</title>
+    <link rel="stylesheet" href="./Helsingborg_files/style.css">
+    <link rel="stylesheet" href="./Helsingborg_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Helsingborg_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Helsingborg_files/all.css">
+    <link href="./Helsingborg_files/css" rel="stylesheet">
+</head>
+
+<body class="main-background">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <nav class="main-header navbar d-flex justify-content-center">
+                    <div class="navbar-brand">
+                        <h1> HemmaHbg-"WELCOME TO HELSINGBORG"</h1>
+                        <h6>"Borta är bra, men Helsingborg är bäst!"</h6>
+                    </div>
+                </nav>
+                <nav>
+                    <div ng-controller="getWeatherCtrl" class="kortNavbar ng-scope">
+                        <article class="weather">Todays temperature Is:<mark class="ng-binding">3.99°C</mark></article>
+                        <article class="weather">Weather is:<mark class="ng-binding">broken clouds</mark></article>
+                        <!--<article>Weather:{{weatherResult_icon}}</article>-->
+                    </div>
+                    <div>
+                    <ul id="sidenav-index" ng-controller="AuthCtrl" class="ng-scope">
+                        <li class="nav-link">
+                            <a href="http://127.0.0.1:8080/#!/" class="nav-link" id="index-home">home</a>
+                        </li>
+                        <!-- ngIf: !user --><li class="nav-item ng-scope" ng-if="!user" id="index-signup"><a href="http://127.0.0.1:8080/#!/sign-up" class="nav-link"><span class="glyphicon glyphicon-user "></span>
+                                Sign Up</a></li><!-- end ngIf: !user -->
+                        <!-- ngIf: !user --><li class="nav-item ng-scope" ng-if="!user" id="index-login"><a href="http://127.0.0.1:8080/#!/login" class="nav-link"><span class="glyphicon glyphicon-log-in "></span>
+                                Login</a></li><!-- end ngIf: !user -->
+                        <li> <a class="g-signin2" href="http://127.0.0.1:8080/#!/sign-in" id="index-google">SignIn with google</a></li>
+                        <!-- ngIf: user -->
+                    </ul>
+                </div></nav>
+            </div>
+        </div>
+    </div>
+    <!-- ngView: --><main ng-view="" class="ng-scope"><div ng-show="user" class="ng-scope ng-hide">
+        <h4 class="ng-binding">Welcome </h4>
+</div> 
+ </main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="box1 sidebox col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8080/#" target="_blank" class="nav-link"><span class="fab fa-facebook "></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8080/#" target="_blank" class="nav-link"><span class="fab fa-twitter "></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://127.0.0.1:8080/#" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="full_buttons big-buttons">
+                    <label class="simulator_button">
+                        <span class="text" data-text="PA">PA</span>
+                    </label>
+                    <label class="simulator_button">
+                        <span class="text" data-text="EV">EV</span>
+                    </label>
+                    <label class="simulator_button">
+                        <span class="text" data-text="FO">FO</span>
+                        <a href="http://127.0.0.1:8080/cafe.html"><button class="button">FO</button></a>
+                    </label>
+                    <label class="simulator_button">
+                        <span class="text" data-text="WI">WI</span>
+                    </label>
+                    <label class="simulator_button">
+                        <span class="text" data-text="TO">TO</span>
+                    </label>
+                    <label class="simulator_button">
+                        <span class="text" data-text="TR">TR</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+                <!--<nav class="bottomNavbar">
+                        <ul class="nav">
+                        <li class="events nav-item">
+                            <a href="#!/aman" class="nav-link"><button type="submit">events</button></a></li>
+                        <li class="parking nav-item">
+                            <a href="#!/subarna" class="nav-link"><button type="submit">parking</i></button></a></li>
+                        <li class="toilets nav-item">
+                            <a href="#!/pratibha" class="nav-link"><button type="submit">Public toilets</button></a></li>
+                        <li class="cafe nav-item">
+                            <a href="#!/shweta" class="nav-link"><button type="submit">restaurants</i></button></a></li>
+                        <li class="tracking nav-item">
+                            <a href="#!/garima" class="nav-link"><button type="submit">tracking</i></button></a></li>
+                        <li class="transport nav-item">
+                            <a href="https://www.skanetrafiken.se/" class="nav-link"><button type="submit">transport</button></a></li>
+                    </ul>
+                </nav>-->
+
+   
+
+    <script src="./Helsingborg_files/angular.min.js"></script>
+    <script src="./Helsingborg_files/angular-route.min.js"></script>
+    <!-- Firebase -->
+    <script src="./Helsingborg_files/firebase.js"></script>
+    <!-- AngularFire -->
+    <script src="./Helsingborg_files/angularfire.min.js"></script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAU9-6SMNNyXUqDq_39d4vSOsv-_3lee-I",
+            authDomain: "helsingborg-d614a.firebaseapp.com",
+            databaseURL: "https://helsingborg-d614a.firebaseio.com",
+            projectId: "helsingborg-d614a",
+            storageBucket: "helsingborg-d614a.appspot.com",
+            messagingSenderId: "759198529213",
+            token_uri: "https://www.googleapis.com/oauth2/v3/token",
+            auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
+            auth_uri: "https://accounts.google.com/o/oauth2/auth",
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="./Helsingborg_files/jquery.min.js"></script>
+    <script src="./Helsingborg_files/bootstrap.min.js"></script>
+    <script src="./Helsingborg_files/app.js"></script>
+    <script src="./Helsingborg_files/controller.js"></script>
+    <script src="./Helsingborg_files/services.js"></script>
+    <footer class="footer">
+        © 2018 GRASSP
+    </footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+
+</body></html>

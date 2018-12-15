@@ -1,0 +1,21 @@
+
+<div class="container">
+       <div class="d-flex justify-content-center m-2">
+           <form ng-submit="login(user)" class="form p-5 border-info">
+               <div class="mb-2">
+                   <h1 class="fa fa-fw fa-user mt-5">Login</h1>
+               </div>
+               <div class="form-group">
+                   <label for="email">Email</label>
+                   <input type="email" class="form-control" ng-model="user.email" id="email" placeholder="Enter your email" required autofocus>
+               </div>
+               <div class="form-group">
+                   <label for="password">password</label>
+                   <input type="password" class="form-control" ng-model="user.password" id="password" placeholder="password"required>
+               </div>
+               <button type="submit" class="btn btn-lg btn-primary btn-block">Log in</button>
+               <a class="btn btn-other d-flex justify-content-center" href="index.html" role="button">Back</a>
+       </div>
+       </form>
+   </div>
+   </div>

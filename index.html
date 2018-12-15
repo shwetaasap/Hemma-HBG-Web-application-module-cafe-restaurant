@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='GRASSPApp'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edg">
+    <title>Helsingborg</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet'>
+    <!--Googlefont-->
+</head>
+
+<body class="main-background">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <nav class="main-header navbar d-flex justify-content-center">
+                    <div class="navbar-brand">
+                        <h1> HemmaHbg-"WELCOME TO HELSINGBORG"</h1>
+                        <h6>"Borta är bra, men Helsingborg är bäst!"</h6>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <!--Calling open weather api for current weather display-->
+                <div ng-controller='getWeatherCtrl' class="kortNavbar">
+                    <img src="images/weather_icon.jpg" alt="image" class="img-responsive">
+                    <article class="weather_temp ">{{weatherResult+'&deg;C'}}</article>
+                    <article class="weather_description ">{{weatherResult_description}}</article>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <div>
+                    <main ng-view></main>
+                </div>
+            </div>
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                <div>
+                    <!--integrating Auth Ctrl for cusing angular firebase for-->
+                    <ul id="sidenav-index" class="sidenav" ng-controller='AuthCtrl'>
+                        <li>
+                            <a href="#!/" class="nav-link" id="index-home">home</a>
+                        </li>
+                        <!--Adding sign-up functionality by angular firebase-->
+                        <li ng-if="!user"><a href="#!/sign-up" class="nav-link" id="index-signup"><span class="glyphicon glyphicon-user "></span>
+                                Sign Up</a></li>
+                        <!--Adding login functionality by angular firebase-->
+                        <li ng-if="!user"><a href="#!/login" class="nav-link" id="index-login"><span class="glyphicon glyphicon-log-in "></span>
+                                Login</a></li>
+                        <!--Authenticating user with facebook login-->
+                        <button class="fab fa-facebook" ng-click="signInWithFacebook()">acebook</button><br>
+                        <!--Authenticating user with google login-->
+                        <button class="fab fa-google" ng-click="signInWithGoogle()">oogle</button>
+                        <!--sign out-->
+                        <li ng-if="user"><a href ng-click="signOut()" id="index-signout">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--Linking all other group members projects by bottom navbar button functionality-->
+            <div id="homeDiv">
+                <div class="full_buttons">
+                    <label class="simulator_button" data-toggle="tooltip" title="Find Parking">
+                        <i class="text fas fa-parking"></i>
+                    </label>
+                    <label class="simulator_button" data-toggle="tooltip" title="Find Toilets">
+                        <span class="text fas fa-male fas fa-female"><i class="fas fa-female"></i></span>
+                    </label>
+                    <label class="simulator_button" data-toggle="tooltip" title="Find Events in Helsingborg">
+                        <span class="text fas fa-futbol"></span>
+                    </label>
+                    <label class="simulator_button" data-toggle="tooltip" title="Find Trails/activities">
+                        <span class="text fas fa-walking"></span>
+                    </label>
+                    <label class="simulator_button" data-toggle="tooltip" title="Find Restaurants">
+                        <a href="cafe.html"><span class="text fas fa-utensils"></span></a>
+
+                    </label>
+                    <label class="simulator_button" data-toggle="tooltip" title="Find Transportation">
+                        <span class="text fas fa-bus"></span>
+                    </label>
+                </div>
+            </div>
+
+            <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+            <script src="https://code.angularjs.org/1.7.5/angular-route.min.js"></script>
+            <!-- Firebase -->
+            <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+            <!-- AngularFire -->
+            <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+            <script>
+                // Initialize Firebase
+                var config = {
+                    apiKey: "AIzaSyCNBgHURku7rLvca5Vd3Pnbf1GrvEyA5EY",
+                    authDomain: "helsingborg-d614a.firebaseapp.com",
+                    databaseURL: "https://helsingborg-d614a.firebaseio.com",
+                    projectId: "helsingborg-d614a",
+                    storageBucket: "helsingborg-d614a.appspot.com",
+                    messagingSenderId: "759198529213",
+                    token_uri: "https://www.googleapis.com/oauth2/v3/token",
+                    auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs",
+                    auth_uri: "https://accounts.google.com/o/oauth2/auth",
+                };
+                firebase.initializeApp(config);
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="app.js"></script>
+            <script src="controller.js"></script>
+            <script src="services.js"></script>
+
+</body>
+
+</html>

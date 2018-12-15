@@ -1,0 +1,612 @@
+/*home-page styling-Shweta*/
+.main-background{
+    background-image: url('/images/Helsingborg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/*INDEX file____mainheader*/
+.main-header h1{
+    font-family: 'Berkshire Swash', cursive;
+    color:black!important;
+    text-shadow: 2px 1px white;
+    font-size: 3.5vw!important;
+    text-align: center;
+ }
+ .main-header h6{
+    font-family:'Jacques Francois Shadow','Lucida Sans','Lucida Sans Regular','Lucida Grande','Lucida Sans Unicode',Geneva,Verdana,sans-serif!important;
+    color: white!important;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-size: 2vw!important;
+ }
+/*INDEX file____background-image-to expand navbar till end*/
+.container-fluid{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+/*INDEX____main heding*/
+.main-header{
+    height: 150px;
+}
+.navbar-expand{
+    flex-flow: row nowrap;
+    justify-content: unset;
+}
+
+/*INDEX file____Weather report display*/
+.weather_temp{
+    /* weather report display */
+    color: rgb(3, 3, 3);
+    font-size: 2vw;
+    display: inline;
+    position: absolute;
+    left: 26%;
+    top: 200%; 
+}
+.weather_description {
+  /* weather report display */
+    color: rgb(3, 3, 3);
+    font-size: 1.5vw;
+    display: inline;
+    position: absolute;
+    left: 16%;
+    top:320%;
+}
+.kortNavbar .img-responsive{
+    /* Centered text */
+    position: absolute;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    padding: .75rem 1rem;
+    list-style: none!important;
+    width: 200px;
+    border-radius: 15%;
+    margin: 20%;
+    display: flex;
+    justify-content: center; 
+}
+
+/*INDEX_ file___sign in and log-in navbar*/
+.signinPage{
+    background-color: #d2dae2;
+    width: 600px;
+    border:2px #27282d solid;
+    height: 400px;  
+}
+.kortNavbar .nav{
+ display: flex; 
+justify-content: flex-end;
+flex-direction: row;
+}
+ .kortNavbar a{
+    border:1px solid #f53b57;
+    border-radius: 10px;
+    color: black; 
+    margin-inline-end: 10px;
+    padding: .5rem 1rem;
+    display: flex;  
+}
+.kortNavbar li a:hover{
+    background-color: #3c40c6;
+}
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+/*Side navbar____signup login google facebook navbar*/
+#sidenav-index a, #sidenav-index button {/* Position  both a and button of li outside of the screen */
+    right: -20px;/* Position them outside of the screen */
+    transition: .09s;/* Add transition on hover */
+    padding:  0.7rem 1rem; /* 15px padding */
+    width: 25%; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.50vw; /* Increase font size in vw to make it responsive*/
+    color: white;/* White text color */
+    border-radius: 10px 0px 0px 10px; /* Rounded corners on the top right and bottom right side */
+    border: #d2dae2 solid 1px;
+    position:absolute;
+   
+}
+#sidenav-index a:hover , #sidenav-index button:hover{/* hover both a and button of li  */
+    right: 40px; /* On mouse-over, make the elements appear as they should */
+}
+.sidenav{
+    float: right;
+    list-style: none!important;  
+}
+.sidenav >.fa {
+    padding: 20px;
+    font-size: 3vw;
+    width: 12rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;  
+  }
+  .sidenav >.fa:hover {
+      opacity: 0.7;
+  }
+  
+  #sidenav-index>.fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-bottom: 10%;
+    top: 650%;
+   
+  }
+  
+  #sidenav-index>.fa-google {
+    background: #dd4b39;
+    color: white;
+    top: 800%;
+  }
+
+#index-home {
+    background-color: #4CAF50;
+    margin-bottom: 1rem;
+   
+}
+#index-signup {
+    background-color: #4CAF50;
+    margin-bottom: 1rem;
+    top: 200%;
+}
+
+#index-login{
+    background-color: #ffa801;
+    margin-bottom: 1rem;
+    top: 450%;
+}
+#index-signout{
+    background-color: #4CAF50;
+    margin-bottom: 1rem;
+    top: 200%;
+}
+/*login page background*/
+.form{
+    background-color: #4bcffa;
+}
+.form .fa{
+    font-size: 2rem;
+}
+/*bottom navbar with links to other pages*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(Helsingborg2.jpg);
+  background-position: top center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0;
+}
+#homeDiv{
+    height: 180px;
+    width: 100%;
+}
+#homeDiv>div {
+  background-color: black;
+  width: 100%;
+  opacity: 0.9;
+  margin-top: 34%;
+  height: 180px;
+  box-sizing: border-box;
+  padding: none;
+}
+#homeDiv>div::after {
+  content: '';
+  box-sizing: border-box;
+
+}
+header {
+  font-family: 'Oldenburg', 'Open Sans';
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+.full_buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 190px!important;
+}
+.simulator_button {
+  position: relative;
+  display: block;
+  width: 20vh;
+  height: 20vh;
+  border-radius: 2vh;
+}
+.simulator_button:nth-child(1) .text {
+  background-color: #361b01;
+  color: #f46c03;
+  border-color: #f46c03;
+}
+.simulator_button:nth-child(1) .text::after {
+  background-image: linear-gradient(-270deg, #feb104, #f46c03);
+}
+.simulator_button:nth-child(2) .text {
+  background-color: #022636;
+  color: #0289f4;
+  border-color: #0289f4;
+}
+.simulator_button:nth-child(2) .text:after {
+  background-image: linear-gradient(-270deg, #12cefe 1.1vh, #0289f4);
+}
+.simulator_button:nth-child(3) .text {
+  background-color: #4bcffa;
+  color: #fff;
+  border-color: #fff;
+}
+.simulator_button:nth-child(3) .text:after {
+  background-image: linear-gradient(-270deg, #d19eff, #9930f8);
+}
+.simulator_button:nth-child(4) .text {
+  background-color: #0be881;
+  color: #11998e;
+  border-color: #11998e;
+}
+.simulator_button:nth-child(4) .text:after {
+  background-image: linear-gradient(-270deg, #ff67aa, #ff2e8b);
+}
+.simulator_button:nth-child(5) .text {
+  background-color: #f159f1;
+  color: #493240;
+  border-color: #493240;
+}
+.simulator_button:nth-child(5) .text:after {
+  background-image: linear-gradient(-270deg, #ff791d, #ff3f1d);
+}
+.simulator_button:nth-child(6) .text {
+  background-color: #380b1f;
+  color: #ff3f1d;
+  border-color: #ff3f1d;
+}
+.simulator_button:nth-child(5) .text:after {
+  background-image: linear-gradient(-270deg, #ff791d, #ff3f1d);
+}
+.text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 15vh;
+  line-height: calc(20vh - 2.2222222222vh);
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1.1111111111vh solid;
+  border-radius: 2vh;
+  cursor: pointer;
+  z-index: 3;
+
+}
+.text:before {
+  bottom: -1.1111111111vh;
+  z-index: 2;
+}
+
+.text:after {
+  top: -1.1111111111vh;
+  z-index: 3;
+}
+/*footer*/
+footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-size:2rem;
+ }
+
+/*Cafe/Restaurant/butik page-Shweta*/
+.cafebody{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    padding: 5rem;
+}
+#text_style1{
+    color: #d2dae2;
+    padding: 4rem!important;
+    font-size: 4vw!important;
+    margin-bottom: 3rem!important;
+}
+.cafe-background{
+    background-image: url('/images/cafe-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/*  styling inner module (ex cafe) search page */
+.parallax{
+   background-attachment: fixed;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: 25vw;   
+}
+.top_nav{
+    margin-bottom: 2rem;
+}
+/*  styling inner module (ex cafe) search page */
+.tagline{
+   padding:2rem;
+   border-radius: 2rem;
+   background-color: rgba(0,0,0,0.8);
+   text-align: center;
+   color:#f159f1;
+   text-shadow: white 1px 1px; 
+   margin-bottom: 3rem;
+}
+.card_style{
+    margin-top: 2rem;
+}
+.cafe{
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    }
+    /*  styling texts and card display */
+.card_display{
+    color: black;
+    font-size: 2vw;
+    opacity: 1;
+   text-align: center;
+   margin-top: 2rem;
+   padding: 1rem 2rem;
+   border-radius: 2rem;
+   text-align: center;
+   margin-bottom: 2rem;
+}
+.text_style5{
+    color: #000;
+}
+#text_style2{
+    font-size: 3vw;
+}
+#text_style4{
+    color: white;
+}
+#text_style3{
+    color: white;
+    background-color: #f159f1;
+    margin: 1rem;
+    padding: 2rem;
+}
+/* giving style to data dispkay*/
+.cafe-texts:nth-child(odd){
+    background-color:#ffd32a;
+    opacity: .8;
+    margin-bottom: 1rem;
+}
+/*  giving style to data dispkay*/
+.cafe-texts:nth-child(even){
+    background-color:#3c40c6;
+    color: white;
+    opacity: .8;
+    margin-bottom: 1rem;
+}
+/*  map display */
+.cafe_map{
+    width: 100%!important;
+    
+    object-fit: cover;
+}
+/*  cafe&restaurant dropdown menu  */
+.dropdown-menu {
+    min-width: 4vw;
+    font-size: 1vw!important;
+    color: #212529;
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    justify-content: center;
+    top: 100%;
+    left: unset!important;
+}
+.dropdown {
+    display: flex;
+    justify-content: center;
+   
+}
+.navbar-brand {
+display: flex; 
+justify-content: center;
+float: none!important; 
+}
+/* Style the links inside the sidenav */
+.navbar-brand h1 {
+font-size: 3vw!important; 
+}
+.footer_top{
+    margin-top: 10%;
+}
+/* back button styling */
+.back_btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .back_btn .fa{
+padding: 0%;
+font-size: 0%;
+width: 0%;
+  }
+  /* Darker background on mouse-over */
+  .back_btn:hover {
+    background-color: RoyalBlue;
+  }
+/* Style the links inside the sidenav */
+#mySidenav {
+    height: 100%; /* 100% Full-height */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  top: 0; /* Stay at the top */
+  left: 0;
+  margin-right: 20%;
+ }
+ /* Style the links inside the sidenav */
+ #mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -13rem; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 0.7rem 1rem; /* 15px padding */
+    width:17rem;
+    text-decoration: none; /* Remove underline */
+    font-size: 2vw;/*2.5rem; /* Increase font size */
+    text-align: right;
+    color: white; /* White text color */
+    border-radius: 0 0.5rem 0.5rem 0; /* Rounded corners on the top right and bottom right side */
+ }
+ #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+ }
+ 
+ /* The about link: 20px from the top with a green background */
+ #about {
+    top:8rem !important ;
+
+    background-color: #1e272e !important ;
+ }
+ #activityButton {
+   top:35.5rem !important ;
+   background-color: #4bcffa !important ; /* Activities- Amanpreet */
+ }
+ #toiletButton {
+    top:13.5rem !important ;
+    background-color:#3c40c6 !important ; /* Toilets- Pratibha */
+ }
+ #trailButton {
+    top:24.5rem !important ;
+    background-color: #0be881 !important ; /* Trails- Garima */
+ }
+ #foodButton {
+    top: 19rem !important ;
+    background-color: #f159f1!important; /* Food - Shweta */
+ }
+ #parkingButton {
+    top: 30rem!important  ;
+    background-color: #ffd32a!important; /* Parking - Subarna */
+ }
+
+
+/* Use a media query to add a breakpoint at 360px: */
+@media screen and (max-width: 360px){
+    .kortNavbar .img-responsive{
+        /* Centered text */
+        width: 25%;
+        margin: 0%; 
+    }
+    #homeDiv{
+        height: 50%;
+        width: 100%;
+    }
+    #homeDiv>div {
+      background-color: black;
+      width: 100%;
+      opacity: 0.9;
+      margin-top: 90%;
+      height: 50%;
+      box-sizing: border-box;
+      padding: none;
+    }
+    #homeDiv>div::after {
+      content: '';
+      box-sizing: border-box;
+    
+    }
+    header {
+      font-family: 'Oldenburg', 'Open Sans';
+      font-size: 40%;
+      font-weight: bolder;
+      text-align: center;
+      color: white;
+    }
+    .full_buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 50%!important;
+    }
+    .simulator_button {
+        position: relative;
+        display: block;
+        width: 10vh;
+        height: 10vh;
+        border-radius: 1vh;
+    }
+    .text{
+        font-size: 8vh;
+    }
+.cafe-background >.container{
+    margin-left: 30px;
+}
+.restaurang_map,.cafe_map{
+    width:245px;
+}
+#text_style1{
+font-size: 6vh!important;
+}
+.navbar-brand h1 {
+    font-size: 15px!important;
+}
+.main-header h6{
+    font-size: 15px!important;
+}
+#sidenav-index a, #sidenav-index button{
+    font-size: 20px!important;
+}
+.ng-binding{
+    font-size: 12px!important;
+    margin-left: 100px;
+}
+.weather_temp {
+    font-size: 10px!important;
+    left: -60px!important;
+    top: 200%!important;
+}
+.weather_description {
+    font-size: 10px!important;
+    left: -80px!important;
+    top: 12px!important;
+}
+}
+
+
+
+
+
+
+
+
+
+
+

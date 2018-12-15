@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cafeApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Helsingborg</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="cafe-background">
+    <div id="mySidenav">
+        <a href="/index.html" id="about">Home <i class="fas fa-home"></i></a>
+        <a href="#" id="parkingButton">Parking <i class="fas fa-parking"></i></a>
+        <a href="#" id="foodButton">Food <i class="fas fa-utensils"></i></a>
+        <a href="#" id="toiletButton">Toilets <i class="fas fa-male"></i><i class="fas fa-female"></i></a>
+        <a href="#" id="trailButton">Trails <i class="fas fa-walking"></i></a>
+        <a href="#" id="activityButton">Activity <i class="fas fa-futbol"></i></a>
+    </div>
+
+    <div class="container-fluid top_nav">
+        <div class="row">
+            <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="main-header ">
+                    <h1 id="text_style1">Cafes & Restaurants</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid parallax">
+        <div class="row tagline">
+            <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="card">
+                    <div class="card-body card_style" id="text_style4">
+                        <h2>Search as per the best performing surveys</h2><br>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                <h4 id="text_style4">Select Catoegary</h4>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#!/cafes">Cafe</a></li>
+                                <li><a href="#!/restaurants_select">Restaurant</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main ng-view></main>
+
+    <script src=" https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.7.5/angular-route.min.js"></script>
+    <script src="app.js"></script>
+    <script src="controller.js"></script>
+    <script src="services.js"></script>
+    <footer class="footer_top">
+        <h5>&copy 2018 GRASSP || Powered by <img src="images/logoHBG_1.png" style="width:10rem"></h5>
+    </footer>
+</body>
+
+</html>

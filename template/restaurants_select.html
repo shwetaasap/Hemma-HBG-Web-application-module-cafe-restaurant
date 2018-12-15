@@ -1,0 +1,21 @@
+<section class="cafe-background">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 col-sm-12 col-md-12 col-lg-12 col-xl-12 cafe">
+                    <div class="card-xs-10 card-sm-12 card-md-12 card-lg-12 card-xl-12">
+                        <div class="card">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <div ng-model="selectedNamn" class="card_display">
+                                        <h3 id="text_style3">Search Restaurants in the city</h3>
+                                    <article ng-repeat="item in outputArray" value="{{item.fields.geo_point_2d}}" class="cafe-texts"><h3>Name:</h3><h5>{{item.fields.namn}}</h5>
+                                        <h3>Address:</h3><h5>{{item.fields.adress}}</h5> <h3>website:</h3><h5>{{item.fields.hemsida}}</h5>
+                                    <button class="text_style5" type="submit" ng-click="cafeMaps(item.fields.geo_point_2d)"><h5>Click here to view location</h5></button></article>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>

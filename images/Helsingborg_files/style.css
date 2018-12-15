@@ -1,0 +1,377 @@
+/*home-page styling*/
+html,body{
+    height: 100%;
+   }
+.main-background{
+    background-image: url('/images/Helsingborg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+/*INDEX____background-image-to expand navbar till end*/
+.container-fluid{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+/*INDEX____Weather report display*/
+.weather{
+    color: rgb(3, 3, 3);
+    font-size: 15px;
+    margin: 5px;
+    display: inline;
+}
+/*INDEX____sidebar icons*/
+.box1{
+    margin-top: 40px;
+}
+.box1 a{
+    background: #27282d;
+    color: #fff;
+    border: 2px solid #27282d;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    padding: 2px 0;
+    margin: 8px;  
+}
+/*INDEX____sign in and log-in navbar*/
+.kortNavbar{
+    padding: .75rem 1rem;
+    list-style: none!important;
+}
+.signinPage{
+    background-color: #d2dae2;
+    width: 600px;
+    border:2px #27282d solid;
+    height: 400px;  
+}
+.kortNavbar .nav{
+ display: flex; 
+justify-content: flex-end;
+flex-direction: row;
+}
+ .kortNavbar a{
+    border:1px solid #f53b57;
+    border-radius: 10px;
+    color: black; 
+    margin-inline-end: 10px;
+    padding: .5rem 1rem;
+    display: flex;  
+}
+.kortNavbar li a:hover{
+    background-color: #3c40c6;
+}
+.sidenav-index a {
+    position: fixed;/* Position them relative to the browser window */
+    right: 20px;/* Position them outside of the screen */
+    transition: 0.3s;/* Add transition on hover */
+    padding:  0.7rem 1rem; /* 15px padding */
+    width: 18rem; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 3rem; /* Increase font size */
+    color: white;/* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+    list-style: none!important;
+    text-align: right; 
+}
+
+.sidenav-index a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+#index-home {
+    top: 20px;
+    background-color: #4CAF50;
+}
+
+#index-signup {
+    top: 80px;
+    background-color: #2196F3;
+}
+
+#index-login{
+    top: 140px;
+    background-color: #f44336;
+}
+
+#index-google {
+    top: 200px;
+    background-color: #555
+}
+/*bottom navbar with links to other pages*/
+.bottomNavbar{
+    background-color: #3c40c6;
+    display: flex;
+    list-style: none!important;
+    padding:1rem 1rem;
+    justify-content: center;  
+}
+.bottomNavbar a:hover {
+    background-color: #3c40c6;
+}
+.bottomNavbar a{
+    display: flex;
+    border-radius: 15px; 
+    margin-inline-end: 10px;
+    border: #f53b57 2px solid; 
+    background-color: #ffd32a;   
+}
+/*INDEX____main heding*/
+.main-header{
+    height: 150px;
+}
+.navbar-expand{
+    flex-flow: row nowrap;
+    justify-content: unset;
+}
+.full_buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 170px;
+    opacity: 0.8;
+    margin-top: 15%;
+}
+.big-buttons{
+    background-color: #3c40c6;
+    height: 150px;
+    box-sizing: border-box;
+    padding: none;
+}   
+       
+  .simulator_button {
+    position: relative;
+    display: block;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 2vh;
+  }
+
+  .simulator_button:nth-child(1) .text {
+    background-color: #4bcffa;
+    color: #4bcffa;
+    border-color: #4bcffa;
+  }
+  .simulator_button:nth-child(1) .text::after {
+    background-image: linear-gradient(-270deg, #4bcffa, #4bcffa);
+  }
+
+  .simulator_button:nth-child(2) .text {
+    background-color: #6e6c64;
+    color: #6e6c64;
+    border-color: #6e6c64;
+  }
+  .simulator_button:nth-child(2) .text:after {
+    background-image: linear-gradient(-270deg, #6e6c64 1.1vh, #6e6c64);
+  }
+
+  .simulator_button:nth-child(3) .text {
+    background-color: #0be881;
+    color: #0be881;
+    border-color: #0be881;
+  }
+  .simulator_button:nth-child(3) .text:after {
+    background-image: linear-gradient(-270deg, #0be881, #0be881);
+  }
+
+  .simulator_button:nth-child(4) .text {
+    background-color: #f159f1;
+    color: #f159f1;
+    border-color: #f159f1;
+  }
+  .simulator_button:nth-child(4) .text:after {
+    background-image: linear-gradient(-270deg, #f159f1, #f159f1);
+  }
+
+  .simulator_button:nth-child(5) .text {
+    background-color: #ff3f34;
+    color: #ff3f34;
+    border-color: #ff3f34;
+  }
+  .simulator_button:nth-child(5) .text:after {
+    background-image: linear-gradient(-270deg, #ff3f34, #ff3f34);
+  }
+  .simulator_button:nth-child(6) .text {
+    background-color: #ffa801;
+    color: #ffa801;
+    border-color: #ffa801;
+  }
+  .simulator_button:nth-child(6) .text:after {
+    background-image: linear-gradient(-270deg, #ffa801, #ffa801);
+  }
+
+  .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 15vh;
+    line-height: calc(20vh - 2.2222222222vh);
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1.1111111111vh solid;
+    border-radius: 2vh;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 2;
+  }
+
+  .text:before,
+  .text:after {
+    content: attr(data-text);
+    position: absolute;
+    display: block;
+    border: none;
+    left: -1.1111111111vh;
+    width: calc(100% + 1.1111111111vh*2);
+    height: calc(100% + 1.1111111111vh*2);
+    border-radius: 2vh;
+    color: #000;
+  }
+
+  .text:before {
+    bottom: -1.1111111111vh;
+    z-index: -1;
+  }
+
+  .text:after {
+    top: -1.1111111111vh;
+    z-index: 3;
+  }
+.main-header h1{
+   font-family: 'Berkshire Swash', cursive;
+   color:black!important;
+   text-shadow: 2px 1px white;
+   font-size: 50px!important;
+   text-align: center;
+}
+.main-header h6{
+    font-family: 'Kumar One Outline', regular!important;
+    font-family: 'Jacques Francois Shadow', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif!important;
+   color: white!important;
+   text-shadow: 2px 2px black;
+   text-align: center;
+   font-size: 30px!important;
+}
+/*footer*/
+.footer{
+    color: black;
+    font-size: 30px;
+}
+/*Cafe/Restaurant/butik page*/
+.cafebody{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    padding: 6rem;
+}
+.cafebody h1{
+    color: #d2dae2;
+    background-color: #3c40c6;
+    padding: 2rem;
+}
+.cafe-background{
+    background-image: url('/images/cafe-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.cafe{
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    }
+.cafe-texts{
+    background-color:#ef5777;
+    color: black;
+    padding: 10px;
+    border: 10px solid white;
+    font-size: 2rem;
+}
+.dropdown-menu {
+    min-width: 10rem;
+    /*padding: .5rem 0;
+    margin: .125rem 0 0;*/
+    font-size: 1rem;
+    color: #212529;
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    display: none; 
+    justify-content: center;
+}
+.dropdown {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+.navbar-brand {
+display: flex; 
+justify-content: center;
+float: none!important; 
+}
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    left: -13rem; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 0.7rem 1rem; /* 15px padding */
+    width: 18rem; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 3rem; /* Increase font size */
+    text-align: right;
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+ }
+ #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+ }
+ 
+ /* The about link: 20px from the top with a green background */
+ #about {
+    top: 10rem;
+    background-color: #1e272e;
+ }
+ 
+ #HomeButton1 {
+    top:18rem;
+    background-color: #4bcffa; /* Blue */
+ }
+ 
+ #HomeButton2 {
+    top: 26rem;
+    background-color: #6e6c64; /* Red */
+ }
+ 
+ #HomeButton3 {
+    top: 34rem;
+    background-color: #0be881 /* Light Black */
+ }
+ #HomeButton4 {
+    top: 42rem;
+    background-color: #f159f1 /* Light Black */
+ }
+ #HomeButton5 {
+    top: 50rem;
+    background-color: #ff3f34; /* Light Black */
+ }
+ #HomeButton6 {
+    top: 62rem;
+    background-color: #ffa801;
+ }
